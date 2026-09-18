@@ -1,0 +1,100 @@
+{
+	"id": "harbin",
+	"title": "The Songhua, the Compound & the Yard",
+	"gm_notes": "The three play surfaces from Wiki/Missions/Ember-Extraction.md, in beat order: rendezvous on the frozen Songhua (contact + verification, ~10 ft/hex), the compound workstation in its guarded and after-hours layers (heist + puzzle — stage 'epoch_site' if the party goes in loud, 'epoch_site_dark' if they wait for the shift change), and the rail yard for the chase out. Deep winter throughout, but the weather is NOT uniform: snow falls on the two outdoor tiles (rendezvous, extraction) and is off inside the compound, and the yard swaps the winter-wind bed for rail-yard ambience. So the tile-to-tile contrast the projector gives you is weather first, then light — bonfire and braziers, then near-blackout, then the yard's lamps. Music is placeholder (test_mission) pending Alexandre's Suno suite.",
+	"maps": [
+		{
+			"id": "rendezvous",
+			"title": "The Frozen Songhua (contact)",
+			"adjacent": [
+				"epoch_site",
+				"epoch_site_dark"
+			],
+			"scene": {
+				"image": "res://assets/maps/harbin_rendezvous.png",
+				"briefing": "harbin_briefing.png",
+				"hex_grid": true,
+				"time_of_day": 0.7,
+				"season": "winter",
+				"effects": [
+					"snow"
+				],
+				"music": {
+					"suite": "test_mission",
+					"tier": "exploration"
+				},
+				"ambience": "amb_winter_wind.wav"
+			}
+		},
+		{
+			"id": "epoch_site",
+			"title": "The Compound Workstation (guarded)",
+			"adjacent": [
+				"rendezvous",
+				"epoch_site_dark",
+				"extraction"
+			],
+			"scene": {
+				"image": "res://assets/maps/harbin_epoch_site.png",
+				"briefing": "harbin_briefing.png",
+				"hex_grid": true,
+				"time_of_day": 0.6,
+				"season": "winter",
+				"effects": [],
+				"music": {
+					"suite": "test_mission",
+					"tier": "combat"
+				},
+				"ambience": "amb_winter_wind.wav"
+			}
+		},
+		{
+			"id": "epoch_site_dark",
+			"title": "The Compound Workstation (after hours)",
+			"adjacent": [
+				"rendezvous",
+				"epoch_site",
+				"extraction"
+			],
+			"scene": {
+				"image": "res://assets/maps/harbin_epoch_site_dark.png",
+				"briefing": "harbin_briefing.png",
+				"hex_grid": true,
+				"time_of_day": 0.68,
+				"light_energy": 1.7,
+				"season": "winter",
+				"effects": [],
+				"music": {
+					"suite": "test_mission",
+					"tier": "exploration"
+				},
+				"ambience": "amb_winter_wind.wav"
+			}
+		},
+		{
+			"id": "extraction",
+			"title": "The Rail Yard (the passenger drop)",
+			"adjacent": [
+				"epoch_site",
+				"epoch_site_dark"
+			],
+			"scene": {
+				"image": "res://assets/maps/harbin_extraction.png",
+				"briefing": "harbin_briefing.png",
+				"hex_grid": true,
+				"time_of_day": 0.72,
+				"light_energy": 1.85,
+				"light_grade": [1.24, 1.02, 0.72],
+				"season": "winter",
+				"effects": [
+					"snow"
+				],
+				"music": {
+					"suite": "test_mission",
+					"tier": "boss"
+				},
+				"ambience": "amb_rail_yard.wav"
+			}
+		}
+	]
+}

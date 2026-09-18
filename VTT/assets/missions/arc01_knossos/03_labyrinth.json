@@ -1,0 +1,7 @@
+{
+	"map": "res://assets/maps/labyrinth.png",
+	"music": { "tier": "combat" },
+	"mood": "cave",
+	"hex_grid": true,
+	"gm_notes": "Descent. The Minotaur asset still lives and has been FED recently by someone who knew how to handle it. An EPOCH operative was here — maybe still is. Kill / capture / talk."
+}

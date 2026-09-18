@@ -1,0 +1,6 @@
+{
+	"_comment": "Mission registry. Lists all missions; the app reads this at boot to populate the Mission dropdown. Each entry's `path` is relative to this file's directory.",
+	"missions": [
+		{ "id": "arc01_knossos", "title": "Arc 01 — The Knossos Anomaly", "path": "arc01_knossos/mission.json" }
+	]
+}

@@ -1,0 +1,9 @@
+{
+	"_comment": "Testbed campaign — exercises the new-format reader: multi-map areas, adjacency, and scene-level time-of-day/season lighting.",
+	"id": "calibration",
+	"title": "Calibration / Testbed",
+	"blurb": "Feature testbed for the v0.9 content model.",
+	"missions": [
+		{ "id": "demo", "title": "Demo Mission", "path": "demo/mission.json" }
+	]
+}

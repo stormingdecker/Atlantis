@@ -1,0 +1,10 @@
+{
+	"id": "harbin",
+	"title": "Ember Extraction — Harbin, ~1924",
+	"blurb": "A foundry-support workstation is running in a Harbin compound and its operator wants out. Verify the contact, cut the leash on the hardware, and get both onto a southbound train before EPOCH's recovery team closes the yard.",
+	"theme": "modern",
+	"default_music_suite": "test_mission",
+	"areas": [
+		{ "id": "harbin", "title": "The Songhua, the Compound & the Yard", "file": "harbin.json" }
+	]
+}

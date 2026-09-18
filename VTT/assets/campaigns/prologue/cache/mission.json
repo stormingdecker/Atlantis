@@ -1,0 +1,10 @@
+{
+	"id": "cache",
+	"title": "The Carpathian Cache",
+	"blurb": "Present-day Carpathians. Recover your assigned devices from a cave cache and return with orders. One area, four tiles.",
+	"theme": "modern",
+	"default_music_suite": "test_mission",
+	"areas": [
+		{ "id": "carpathian_cache", "title": "The Carpathian Cache", "file": "carpathian_cache.json" }
+	]
+}

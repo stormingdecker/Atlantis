@@ -1,0 +1,9 @@
+{
+	"_comment": "Arc 00 prologue — The Carpathian Cache. First campaign wired with real generated map tiles; exercises multi-map area switching, per-map time-of-day/season lighting, and particle effects.",
+	"id": "prologue",
+	"title": "Arc 00 — The Cryo Train (Prologue)",
+	"blurb": "The Carpathian cache: the hike, the bear, the boulder, and the chamber that has waited four thousand years.",
+	"missions": [
+		{ "id": "cache", "title": "The Carpathian Cache", "path": "cache/mission.json" }
+	]
+}

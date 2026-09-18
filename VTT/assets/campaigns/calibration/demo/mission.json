@@ -1,0 +1,10 @@
+{
+	"id": "demo",
+	"title": "Demo Mission",
+	"blurb": "Camelot — a town with two adjacent maps, each with its own lighting.",
+	"theme": "arthurian",
+	"default_music_suite": "test_mission",
+	"areas": [
+		{ "id": "camelot", "title": "Camelot", "file": "camelot.json" }
+	]
+}

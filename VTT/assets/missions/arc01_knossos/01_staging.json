@@ -1,0 +1,8 @@
+{
+	"_comment": "Leaf: pure staging. No title here — mission.json owns the menu label.",
+	"map": "res://assets/maps/atlantis.png",
+	"music": { "tier": "exploration" },
+	"mood": "underwater",
+	"hex_grid": true,
+	"gm_notes": "Marine-research-station cover. Briefing officer walks the team through the op — they're read in now, no vagueness. First gradient jump at the end."
+}

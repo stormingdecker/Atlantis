@@ -1,0 +1,13 @@
+{
+	"_comment": "Mission manifest. Lists locations in narrative order. `file` is relative to this file's directory. Mission-level defaults (default_music_suite) apply unless a location overrides them.",
+	"id": "arc01_knossos",
+	"title": "Arc 01 — The Knossos Anomaly",
+	"blurb": "A routine Bronze-Age retrieval in Crete goes wrong: the Minotaur asset is alive, and someone got there first.",
+	"default_music_suite": "test_mission",
+	"locations": [
+		{ "id": "staging", "title": "I — ATA Staging Facility (Briefing)", "file": "01_staging.json" },
+		{ "id": "knossos", "title": "II — Knossos Palace, ~1450 BCE", "file": "02_knossos.json" },
+		{ "id": "labyrinth", "title": "III — The Labyrinth", "file": "03_labyrinth.json" },
+		{ "id": "debrief", "title": "IV — Extraction & Debrief", "file": "04_debrief.json" }
+	]
+}

@@ -1,0 +1,74 @@
+{
+	"id": "carpathian_cache",
+	"title": "The Carpathian Cache",
+	"gm_notes": "Three pillars across four tiles: approach (exploration), den lit + dark (combat / stealth), chamber (puzzle + reveal). Per-map lighting and particle effects deliberately vary to exercise the projector.",
+	"maps": [
+		{
+			"id": "approach",
+			"title": "Approach & Cave Mouth",
+			"adjacent": ["den"],
+			"scene": {
+				"image": "res://assets/maps/cache_approach.png",
+				"hex_grid": true,
+				"time_of_day": "noon",
+				"season": "autumn",
+				"effects": ["leaves"],
+				"lights": [],
+				"music": { "suite": "test_mission", "tier": "exploration" }
+			}
+		},
+		{
+			"id": "den",
+			"title": "The Den (lit)",
+			"adjacent": ["approach", "den_dark", "chamber"],
+			"scene": {
+				"image": "res://assets/maps/cache_den.png",
+				"hex_grid": true,
+				"time_of_day": "noon",
+				"season": "summer",
+				"effects": ["dust"],
+				"lights": [],
+				"music": { "suite": "test_mission", "tier": "combat" }
+			}
+		},
+		{
+			"id": "den_dark",
+			"title": "The Den (dark / infiltration)",
+			"adjacent": ["den"],
+			"scene": {
+				"image": "res://assets/maps/cache_den_dark.png",
+				"hex_grid": true,
+				"time_of_day": "midnight",
+				"season": "winter",
+				"effects": [],
+				"lights": [
+					{ "position_px": [695, 635], "radius_px": 150, "color": [1.0, 0.62, 0.28] },
+					{ "position_px": [1500, 550], "radius_px": 150, "color": [1.0, 0.60, 0.26] },
+					{ "position_px": [681, 970], "radius_px": 140, "color": [1.0, 0.64, 0.30] },
+					{ "position_px": [1490, 977], "radius_px": 150, "color": [1.0, 0.58, 0.24] }
+				],
+				"flicker": 0.55,
+				"flicker_speed": 10.0,
+				"music": { "suite": "test_mission", "tier": "exploration" }
+			}
+		},
+		{
+			"id": "chamber",
+			"title": "The Boulder & Hidden Chamber",
+			"adjacent": ["den"],
+			"scene": {
+				"image": "res://assets/maps/cache_chamber.png",
+				"hex_grid": true,
+				"time_of_day": "dusk",
+				"season": "autumn",
+				"effects": ["dust"],
+				"lights": [
+					{ "position_px": [1900, 560], "radius_px": 380, "color": [1.0, 0.66, 0.32] }
+				],
+				"flicker": 0.18,
+				"flicker_speed": 5.0,
+				"music": { "suite": "test_mission", "tier": "boss" }
+			}
+		}
+	]
+}

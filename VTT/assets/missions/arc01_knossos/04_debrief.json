@@ -1,0 +1,7 @@
+{
+	"map": "res://assets/maps/atlantis.png",
+	"music": { "tier": "exploration" },
+	"mood": "none",
+	"hex_grid": false,
+	"gm_notes": "Back to modern day. The routine op wasn't. Players read into the second tier of truth: EPOCH exists, and they are the enemy. (The meteor stays hidden — Arc 02.)"
+}

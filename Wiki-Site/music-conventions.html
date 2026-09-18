@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Music Conventions</title><link rel="stylesheet" href="style.css"></head><body><div class="wrap"><div class="topnav"><a href="index.html">← Wiki Index</a><span class="tag">Design Notes</span></div>
+<h1 id="music-conventions">Music Conventions</h1>
+<p>How we score the campaign. Designed around Suno-generated tracks with intentional leitmotif structure across characters, missions, and factions.</p>
+<h2 id="the-four-tier-mission-music-structure">The Four-Tier Mission Music Structure</h2>
+<p>Every mission ships with a <strong>4-piece music suite</strong>. The four tiers are:</p>
+<ol><li><strong>Exploration</strong> — outdoor approach, wilderness, the long walk in. Atmospheric, sparse, breathing room. Plays during the insertion phase and any travel/investigation in open terrain.</li><li><strong>Civilization</strong> — social/encounter music. Plays when the party reaches a populated area, parlays with NPCs, gathers intel in a settlement, OR meets a significant non-combat NPC in any setting. For missions without a populated zone (uninhabited atolls, dungeons, deep wilderness), this slot covers the <strong>significant social/character moments</strong> — the wreck scene with Earhart, the cellar parlay with Yusupov, the audience with the queen, etc.</li><li><strong>Combat</strong> — minor encounters. Mooks, ambushes, tactical fights against rank-and-file opposition. Driving, tense, but not maxed out.</li><li><strong>Boss</strong> — climactic encounter. The mission&#x27;s apex fight or confrontation. Full intensity, full orchestration. Reserved exclusively for the moment — overuse kills the dramatic weight.</li></ol>
+<p><strong>The four pieces share a sonic palette</strong> — same key/mode, same instrumentation family, same era-flavored production. They are heard as variants of a single mission identity, not as four unrelated tracks. The shift from Exploration to Boss should feel like one piece building over an hour, not a playlist change.</p>
+<h2 id="suno-prompt-conventions">Suno Prompt Conventions</h2>
+<p>Each prompt is written as 1–3 sentences in this structure:</p>
+<ol><li><strong>Era + genre</strong> — e.g. &quot;1930s big-band torch song stripped to,&quot; &quot;late-Victorian chamber piece&quot;</li><li><strong>Instrumentation</strong> — name the instruments explicitly</li><li><strong>Key/mode + tempo</strong> — e.g. &quot;D minor Phrygian, 90 bpm&quot;</li><li><strong>Mood + motif notes</strong> — what emotion, what&#x27;s the recurring melodic/harmonic hook</li></ol>
+<p>Always mark <strong>instrumental</strong> (Suno toggle + reinforce in prompt) unless we specifically want vocalise/chant. Keep prompts under 250 characters for compatibility across Suno&#x27;s prompt modes.</p>
+<p><strong>Leitmotif engineering in Suno.</strong> Suno will not literally reproduce a melody across separate generations — it&#x27;s not that kind of tool. What we <em>can</em> control is:</p>
+<ul><li><strong>Consistent palette.</strong> Same instruments + same key + same era stay recognizable across variants.</li><li><strong>Motif description.</strong> Explicitly describing a melodic shape (&quot;recurring three-note descending motif,&quot; &quot;ascending fifth then a held suspended note&quot;) shapes the generation toward that contour. Use this to seed a theme.</li><li><strong>Same prompt + different mood modifiers.</strong> The most reliable leitmotif technique: write a base prompt for a character/faction, then generate variants by appending mood modifiers (&quot;but anxious,&quot; &quot;but triumphant,&quot; &quot;but slowed half-tempo and tender&quot;).</li></ul>
+<p>The <strong>Doc Young / Doc Old</strong> pair (see <a href="character-themes.html#doc-young--doc-old">Character-Themes.md</a>) is the canonical leitmotif example — same melodic contour described, totally different orchestration and tempo, yields the &quot;same person, fifty years later&quot; effect.</p>
+<h2 id="character-vs-mission-vs-faction-music">Character vs Mission vs Faction Music</h2>
+<p>Three layers stack:</p>
+<ul><li><strong>Faction signatures</strong> — ATA and EPOCH each have a sonic identity that can be hinted at in mission music when one faction&#x27;s presence dominates. (See <em>Faction Signatures</em> below.)</li><li><strong>Character themes</strong> — each named NPC has a leitmotif. When that character is present and active in a scene, their theme can be substituted for or layered over the mission piece appropriate to the tier. (E.g., the Boss tier becomes Helen&#x27;s Theme — Combat Variant during Helen&#x27;s Stronghold finale.)</li><li><strong>Mission suite</strong> — the four-tier default for the location, used when no overriding character is dominant.</li></ul>
+<p>In practice: most scenes use mission music. Boss scenes typically use the boss character&#x27;s combat theme. Significant character moments (Civilization tier) typically use the character&#x27;s theme directly.</p>
+<h2 id="faction-signatures">Faction Signatures</h2>
+<p><strong>ATA</strong> — warm orchestral, French horns prominent, hope-tinted melancholy. Modal harmony leaning Aeolian or Dorian. Real-instrument production, organic, breathing. The sound of preservation, of carrying something fragile through history.</p>
+<blockquote>Warm orchestral, prominent French horns, string quartet underneath, organic and breathing, Aeolian mode, hope-tinted melancholy. The ATA faction signature.</blockquote>
+<p><strong>EPOCH</strong> — cold orchestral + electronic hybrid. Granular synth pads + sub-bass + restrained brass stabs. Brutalist precision. Tempo is mechanical, never <em>rubato</em>. The sound of consolidation, of certainty, of a future that has already been decided.</p>
+<blockquote>Brutalist orchestral-electronic hybrid, granular synth pads, sub-bass pulse, restrained brass stabs, mechanical 90 bpm tempo, no rubato. The EPOCH faction signature.</blockquote>
+<p>These signatures can be quoted inside mission music — a mission heavily contested by EPOCH might layer the EPOCH signature&#x27;s sub-bass pulse under the Combat and Boss tiers, even if the rest of the orchestration is mission-specific.</p>
+<h2 id="location-signatures">Location Signatures</h2>
+<p>Some places carry campaign-wide thematic weight and get their own quotable identity — not a four-tier mission suite, but a single thematic piece that can be substituted into any tier when that location&#x27;s gravity dominates the scene (a flashback to Atlantis, a deep-EPOCH-territory infiltration, etc.). When those places eventually anchor full missions, the four-tier suite is generated as variations on the signature.</p>
+<p><strong>Atlantis</strong> — the foundational myth. Submerged, vast, beautiful, half-remembered. Wordless choir over deep sustained strings and water-resonant percussion. Lydian mode for the otherworldly beauty; the dissolving motif because the city itself is a memory that won&#x27;t fully resolve.</p>
+<blockquote>Ancient submerged-city theme, wordless female choir over deep sustained low strings, distant bowl-gongs and water-resonant hand percussion, bowed double-bass drone, D Lydian, 50 bpm. Recurring slow ascending three-note motif that dissolves. Vocalise — luminous and mournful.</blockquote>
+<p><strong>EPOCH Base (Facility 22C)</strong> — the <a href="#faction-signatures">EPOCH faction signature</a> taken to its logical extreme. No melody, just architecture. The sound of a place that has already decided what happens next.</p>
+<blockquote>Brutalist EPOCH headquarters theme, sub-bass pulse on every beat, layered granular synth pads, cold brass stabs in tight rhythm, mechanical 90 bpm with zero rubato, D minor, recurring three-note descending stab figure repeated like a metronome. Instrumental, oppressive and certain.</blockquote>
+<p><strong>Origin Vault</strong> — the ATA HQ in the eastern Mediterranean. The recurring &quot;home base&quot; cue: between-mission downtime, briefings, the place agents return to. Ancient-modern fusion that signals <em>safety + lineage</em> without being saccharine.</p>
+<blockquote>Eastern Mediterranean ancient-modern fusion. Oud over warm French horn, low cello drone, distant cicadas. D Dorian, 60 bpm. Recurring four-note ascending motif settling into a sustained chord. Instrumental, calm and rooted.</blockquote>
+<p><strong>Reichenbach Falls (1891)</strong> — Swiss Alps. Sigerson&#x27;s extraction site, and a recurring poetic anchor for the campaign&#x27;s &quot;borrowed from death&quot; motif. Sublime, vertical, the sound of a place that almost killed someone.</p>
+<blockquote>Late-Victorian mountain mysticism. Solo violin, sparse harp arpeggios, distant alpine horn, sustained string pad, water-sheet white noise. G minor, 70 bpm. Recurring two-note descending motif like a held breath. Instrumental, sublime and vertiginous.</blockquote>
+<p><strong>Tunguska Impact (1908)</strong> — Siberian taiga at the moment of the anomaly. Wilderness that has just been disturbed by something it can&#x27;t name.</p>
+<blockquote>Russian Romantic forest theme cracked open. Sparse balalaika tremolo, low contrabassoon, hand-percussion taps, sub-bass swell. B minor, 55 bpm. Recurring rising-then-broken three-note motif. Instrumental, vast and uneasy.</blockquote>
+<p><strong>Yusupov Cellar (Petrograd 1916)</strong> — gilded Imperial Russian decadence with the EPOCH underlay creeping in beneath it. The two factions audibly contesting the same room.</p>
+<blockquote>Imperial Russian chamber piece with EPOCH underlay. Solo violin and clavichord, Orthodox bell tolling beneath, faint sub-bass pulse, granular pad. F minor, 75 bpm. Recurring descending four-note motif. Instrumental, gilded decadence over cold.</blockquote>
+<p><strong>Knossos Anteroom (~1450 BCE)</strong> — Bronze Age Cretan palace, ATA home turf. The era and region where the faction is strongest; the music should feel <em>welcoming</em> in a way most missions don&#x27;t.</p>
+<blockquote>Bronze Age Aegean palace, ATA home. Solo lyre and bone flute over warm low strings, distant ceremonial drum, soft female wordless choir in the distance. E Phrygian, 80 bpm. Recurring ascending three-note motif. Vocalise — bright and ancient.</blockquote>
+<p><strong>ATA Safe House — Travel Cue</strong> — an era-flexible underscore for between-mission downtime, transit, and quiet character beats. Not tied to a specific era so it can sit under any setting.</p>
+<blockquote>Generic warm travel cue, ATA-flavored. Low French horns over brushed snare, sustained string pad, soft pizzicato cello pulse. C minor Dorian, 90 bpm. Recurring two-note descending motif, settled and patient. Instrumental — catching your breath.</blockquote>
+<p>Location signatures live as flat files (see <em>File Organization</em> below). In the VTT they appear in the <strong>Singles</strong> list and can also be referenced as a tier within any mission suite.</p>
+<h2 id="file-organization">File Organization</h2>
+<p>Music files live in <code>VTT/assets/audio/music/</code> organized by:</p>
+<pre><code>music/
+  factions/
+    ata_signature.ogg
+    epoch_signature.ogg
+  locations/
+    atlantis.ogg
+    epoch_base.ogg
+  characters/
+    sigerson_theme.ogg
+    mercury_theme.ogg
+    ...
+  missions/
+    howland_1937/
+      01_exploration.ogg
+      02_civilization.ogg
+      03_combat.ogg
+      04_boss.ogg
+    yusupov_1916/
+      ...</code></pre>
+<p>The VTT&#x27;s GM panel surfaces two music modes:</p>
+<ul><li><strong>Mission Suites</strong> — each subfolder under <code>music/missions/</code> is a four-tier suite. The GM picks a suite from a dropdown and switches tiers via Exploration / Civilization / Combat / Boss buttons. Tier mapping is by filename: any file whose lowercased name contains the tier word is mapped to that tier (so <code>01_exploration.ogg</code>, <code>boss.ogg</code>, <code>04_boss_climax.ogg</code> all work).</li><li><strong>Singles</strong> — every music file anywhere under <code>music/</code> (recursive). Faction signatures, location signatures, character themes, and any ad-hoc cue all live here, accessible by name as a one-off override.</li></ul>
+</div></body></html>

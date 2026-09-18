@@ -1,0 +1,10 @@
+{
+  "_comment": "Philips Hue RGB spotlights (4 at the cardinal points) driven by the scene lighting model. Disabled by default. To enable: pair the bridge (press the link button, POST to /api to get an app key), then set enabled=true, bridge_host to the bridge IP, app_key to that key, and cardinals to your light ids (Hue v1 ids are strings). ZigBee is NOT streamed — each lighting change sends one PUT per light with a native transitiontime and the bulb fades itself. See scripts/hue_controller.gd and DESIGN.md §8 (v0.17).",
+  "enabled": false,
+  "bridge_host": "",
+  "app_key": "",
+  "cardinals": { "north": "", "east": "", "south": "", "west": "" },
+  "lights": [],
+  "default_transition_ms": 400,
+  "max_bri": 254
+}

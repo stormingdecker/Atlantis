@@ -1,0 +1,22 @@
+{
+	"_comment": "Atlantis Facility sidecar. The map (atlantis.png) is the CIRCULAR city cropped to its rim; a full-frame seabed backdrop fills the 16:9 behind it so the city reads as nestled in a crater. map_fit shrinks the city below full-viewport fit so it sits inside the backdrop's crater rim (sector polygons scale with it, so they stay aligned). Hex radius is large here because one hex ≈ one room at this zoomed-out scale.",
+	"hex_radius_px": 90,
+	"backdrop": "res://assets/backdrops/atlantis_backdrop.png",
+	"map_fit": 0.68,
+	"ambience": "amb_underwater.wav",
+	"overlays": {
+		"sectors": "atlantis_sectors.json",
+		"ambient": ["underwater_caustics", "meteor_glow"]
+	},
+	"underwater_caustics": {
+		"intensity": 0.35,
+		"speed": 0.30,
+		"tint": [0.55, 0.80, 1.00, 1.0]
+	},
+	"meteor_glow": {
+		"_comment": "position_px is the meteor centre on the map texture; tune once the art lands.",
+		"position_px": [1024, 1024],
+		"radius_px": 260,
+		"color": [1.0, 0.78, 0.35, 0.95]
+	}
+}

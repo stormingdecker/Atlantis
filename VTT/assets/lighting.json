@@ -1,0 +1,15 @@
+{
+	"_comment": "Lighting anchor table (v0.9). Two independent sliders, each with four named stops; the projector tint = interpolated time-of-day tint (brightness folded into RGB) × interpolated season bias. Tints are [r,g,b] (values may exceed 1.0 for a mild boost under multiply). Edit here to retune lighting without touching code; session_state.gd falls back to built-in defaults if this file is absent or malformed.",
+	"time_of_day": {
+		"dawn":     { "tint": [1.00, 0.82, 0.70], "brightness": 0.80 },
+		"noon":     { "tint": [1.00, 1.00, 1.00], "brightness": 1.00 },
+		"dusk":     { "tint": [1.00, 0.78, 0.60], "brightness": 0.82 },
+		"midnight": { "tint": [0.52, 0.60, 0.85], "brightness": 0.50 }
+	},
+	"season": {
+		"spring": { "tint_bias": [0.98, 1.02, 0.98], "suggests": [] },
+		"summer": { "tint_bias": [1.03, 1.00, 0.95], "suggests": [] },
+		"autumn": { "tint_bias": [1.05, 0.95, 0.85], "suggests": ["leaves"] },
+		"winter": { "tint_bias": [0.92, 0.96, 1.06], "suggests": ["snow"] }
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"_comment": "The Long 1910s (belle-époque surge) arc. First mission wired: Fátima 1917 — exercises outdoor crowd tiles, an overcast->miracle lighting pair, a roofs-off floor-plan building, and rain particles.",
+	"id": "the_long_1910s",
+	"title": "The Long 1910s — Belle-Époque Surge",
+	"blurb": "The early-20th-century pressure front where EPOCH pushes and ATA is transit-stretched.",
+	"missions": [
+		{ "id": "fatima", "title": "Fátima, 13 October 1917", "path": "fatima/mission.json" },
+		{ "id": "tarim", "title": "The Tarim Foothold — 1920s", "path": "tarim/mission.json" },
+		{ "id": "harbin", "title": "Ember Extraction — Harbin, ~1924", "path": "harbin/mission.json" }
+	]
+}

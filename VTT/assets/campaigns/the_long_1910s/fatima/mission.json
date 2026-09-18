@@ -1,0 +1,10 @@
+{
+	"id": "fatima",
+	"title": "Fátima, 13 October 1917",
+	"blurb": "The Miracle of the Sun: a mass psi/Mark broadcast before ~70,000 witnesses. Find and contain the source without becoming the story.",
+	"theme": "modern",
+	"default_music_suite": "test_mission",
+	"areas": [
+		{ "id": "fatima", "title": "The Cova da Iria & the Ridge", "file": "fatima.json" }
+	]
+}

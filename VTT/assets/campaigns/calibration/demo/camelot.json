@@ -1,0 +1,38 @@
+{
+	"id": "camelot",
+	"title": "Camelot",
+	"gm_notes": "Testbed town: two adjacent maps demonstrating per-map lighting.",
+	"maps": [
+		{
+			"id": "market",
+			"title": "Market Square",
+			"adjacent": ["throne_hall"],
+			"scene": {
+				"image": "res://assets/maps/knossos.png",
+				"hex_grid": true,
+				"time_of_day": "noon",
+				"season": "summer",
+				"effects": ["dust"],
+				"music": { "suite": "test_mission", "tier": "civilization" }
+			}
+		},
+		{
+			"id": "throne_hall",
+			"title": "Throne Hall",
+			"adjacent": ["market"],
+			"scene": {
+				"image": "res://assets/maps/labyrinth.png",
+				"hex_grid": true,
+				"time_of_day": "dusk",
+				"season": "autumn",
+				"effects": ["leaves"],
+				"music": { "suite": "test_mission", "tier": "exploration" },
+				"on_enter": [
+					{ "reveal_handout": "portrait_test.png", "delay_ms": 300 },
+					{ "wait_for": "gm_continue" },
+					{ "hide_handout": true }
+				]
+			}
+		}
+	]
+}

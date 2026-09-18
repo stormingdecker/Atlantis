@@ -1,0 +1,22 @@
+{
+	"_comment": "Atlantis sector overlay. Polygons + label anchors are authored against the atlantis.png map texture in pixel space. Replace these placeholder coordinates once the real facility art is in place — they assume a 2048x2048 source. The 16-sector layout matches Atlantis-Facility.md (8 inner-ring slices + 8 outer-ring slices, paired by radial slice).",
+	"sectors": [
+		{ "id": "I-1", "name": "Command",         "ring": "inner", "slice": 1, "polygon": [[1024, 700], [1120, 800], [1024, 900], [928, 800]],  "label_anchor": [1024, 800] },
+		{ "id": "I-2", "name": "Refinery",        "ring": "inner", "slice": 2, "polygon": [[1124, 770], [1224, 870], [1124, 970], [1024, 870]], "label_anchor": [1124, 870] },
+		{ "id": "I-3", "name": "Foundry",         "ring": "inner", "slice": 3, "polygon": [[1124, 1070], [1224, 1170], [1124, 1270], [1024, 1170]], "label_anchor": [1124, 1170] },
+		{ "id": "I-4", "name": "Geothermal",      "ring": "inner", "slice": 4, "polygon": [[1024, 1140], [1120, 1240], [1024, 1340], [928, 1240]], "label_anchor": [1024, 1240] },
+		{ "id": "I-5", "name": "Reality Log",     "ring": "inner", "slice": 5, "polygon": [[924, 1070], [1024, 1170], [924, 1270], [824, 1170]], "label_anchor": [924, 1170] },
+		{ "id": "I-6", "name": "Genetics Lab",    "ring": "inner", "slice": 6, "polygon": [[824, 1140], [924, 1240], [824, 1340], [724, 1240]], "label_anchor": [824, 1240] },
+		{ "id": "I-7", "name": "Artifact Vault",  "ring": "inner", "slice": 7, "polygon": [[824, 770], [924, 870], [824, 970], [724, 870]], "label_anchor": [824, 870] },
+		{ "id": "I-8", "name": "Transit Hub",     "ring": "inner", "slice": 8, "polygon": [[924, 770], [1024, 870], [924, 970], [824, 870]], "label_anchor": [924, 870] },
+
+		{ "id": "O-1", "name": "Docks",           "ring": "outer", "slice": 1, "polygon": [[1024, 500], [1180, 580], [1024, 700], [868, 580]], "label_anchor": [1024, 600] },
+		{ "id": "O-2", "name": "Residential N",   "ring": "outer", "slice": 2, "polygon": [[1300, 600], [1460, 700], [1300, 820], [1140, 700]], "label_anchor": [1300, 710] },
+		{ "id": "O-3", "name": "Factory",         "ring": "outer", "slice": 3, "polygon": [[1380, 1024], [1540, 1140], [1380, 1260], [1220, 1140]], "label_anchor": [1380, 1140] },
+		{ "id": "O-4", "name": "Farm",            "ring": "outer", "slice": 4, "polygon": [[1300, 1380], [1460, 1480], [1300, 1600], [1140, 1480]], "label_anchor": [1300, 1490] },
+		{ "id": "O-5", "name": "Commons",         "ring": "outer", "slice": 5, "polygon": [[1024, 1480], [1180, 1580], [1024, 1700], [868, 1580]], "label_anchor": [1024, 1590] },
+		{ "id": "O-6", "name": "Medical",         "ring": "outer", "slice": 6, "polygon": [[748, 1380], [908, 1480], [748, 1600], [588, 1480]], "label_anchor": [748, 1490] },
+		{ "id": "O-7", "name": "Museum",          "ring": "outer", "slice": 7, "polygon": [[668, 1024], [828, 1140], [668, 1260], [508, 1140]], "label_anchor": [668, 1140] },
+		{ "id": "O-8", "name": "Residential S",   "ring": "outer", "slice": 8, "polygon": [[748, 600], [908, 700], [748, 820], [588, 700]], "label_anchor": [748, 710] }
+	]
+}

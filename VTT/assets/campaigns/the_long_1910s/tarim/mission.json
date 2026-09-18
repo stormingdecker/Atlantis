@@ -1,0 +1,10 @@
+{
+	"id": "tarim",
+	"title": "The Tarim Foothold — 1920s",
+	"blurb": "Under archaeology-expedition cover in the Taklamakan, read the out-of-place burials before mundane science misfiles them or EPOCH sanitizes the record — and recover a preserved operative, EPOCH's oldest footprint on Earth.",
+	"theme": "modern",
+	"default_music_suite": "test_mission",
+	"areas": [
+		{ "id": "tarim", "title": "The Taklamakan Dig", "file": "tarim.json" }
+	]
+}

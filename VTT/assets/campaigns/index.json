@@ -1,0 +1,8 @@
+{
+	"_comment": "Campaign registry (v0.9). New-format campaigns list here; the legacy assets/missions/ tree is auto-shimmed as the 'atlantis' campaign by main.gd, so it need not appear here.",
+	"campaigns": [
+		{ "id": "prologue", "title": "Arc 00 — The Cryo Train (Prologue)", "path": "prologue/campaign.json" },
+		{ "id": "the_long_1910s", "title": "The Long 1910s — Belle-Époque Surge", "path": "the_long_1910s/campaign.json" },
+		{ "id": "calibration", "title": "Calibration / Testbed", "path": "calibration/campaign.json" }
+	]
+}

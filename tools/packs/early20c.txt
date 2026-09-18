@@ -1,0 +1,13 @@
+# Early 20th Century (1920s, TL6) — slug|rarity|name|typeline|art_prompt|stats|flavor
+riflebolt|common|Bolt-Action Rifle|Weapon · Rifle · TL6|a 1920s bolt-action military rifle with a leather sling|Damage: 7d pi\nAcc 5 · Range 1000/4200\nMin ST 10 · Shots 5\nWeight 9 lb · Availability: Common|The workhorse that fought two world wars.
+revolver|common|Service Revolver|Weapon · Pistol · TL6|a 1920s service revolver|Damage: 2d+2 pi\nAcc 2 · Range 120/1500 · Shots 6\nWeight 2.5 lb · Availability: Common|Six sure shots and no jams.
+autopistol|uncommon|Semi-Auto Pistol|Weapon · Pistol · TL6|a 1920s semi-automatic pistol (broomhandle / Luger style)|Damage: 2d+2 pi\nAcc 2 · Range 150/1800 · Shots 8\nWeight 2.5 lb · Availability: Uncommon|Faster than the wheel-gun, if it feeds.
+trenchknife|common|Trench Knife|Weapon · Knife · TL6|a 1920s trench knife with a knuckle-duster grip|Damage: sw-1 cut / thr imp\nReach C,1 · Parry 0 · Min ST 6\nWeight 1 lb · Availability: Common|Close work, left over from the last war.
+grenade|uncommon|Hand Grenade|Weapon · Explosive · TL6|a 1920s fragmentation hand grenade|Damage: 5d cr ex [2d frag]\nFuse ~4s · thrown\nWeight 1.5 lb · Availability: Uncommon|Cook it two seconds. Not three.
+steelhelmet|common|Steel Helmet|Armor · Helm · TL6|a 1920s military steel combat helmet|DR: 4\nCovers: skull\nWeight 2.5 lb · Availability: Common|Won't stop a rifle; will stop the shrapnel.
+greatcoat|common|Winter Greatcoat|Armor · Clothing · TL6|a heavy 1920s wool military winter greatcoat|DR: 1 · cold protection\nCovers: torso, arms, legs\nWeight 6 lb · Availability: Common|Harbin in January kills faster than EPOCH.
+torch|common|Electric Torch|Gear · Light · TL6|a 1920s brass electric flashlight (torch)|Beam ~10 yd\nHours per battery\nWeight 1 lb · Availability: Common|Light at the flick of a thumb, still half a miracle here.
+binoculars|uncommon|Field Binoculars|Gear · Optics · TL6|a pair of 1920s prismatic field binoculars in a leather case|+3 Vision at range\nWeight 2 lb · Availability: Uncommon|See the ambush before you walk into it.
+lockpicks|uncommon|Lockpick Set|Gear · Tools · TL6|a 1920s leather roll of lockpicks and tension wrenches|Lockpicking at no penalty\nWeight 0.5 lb · Availability: Uncommon|Every locked door is a suggestion.
+medkit|uncommon|Field Medical Kit|Gear · Medical · TL6|a 1920s field medical kit with morphine ampoules, sulfa, bandages and forceps|First Aid at +2\nStabilize serious wounds\nWeight 4 lb · Availability: Uncommon|Sulfa and a steady hand.
+papers|uncommon|Forged Papers|Gear · Cover · TL6|a 1920s set of forged identity papers, a passport and stamped travel visas|+2 to bluff checkpoints\nWeight negligible · Availability: Uncommon|You are whoever the ink says you are.

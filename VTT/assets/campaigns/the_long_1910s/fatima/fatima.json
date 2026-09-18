@@ -1,0 +1,69 @@
+{
+	"id": "fatima",
+	"title": "F\u00e1tima \u2014 the Cova da Iria & the Ridge",
+	"gm_notes": "Three tiles: the crowd hollow in two lighting states (overcast, and the Miracle-of-the-Sun broadcast) plus the roofs-off ridge farmhouse where the source hides. Rain particles + an overcast->miracle lighting pair exercise the projector; the farmhouse is a floor-plan building tile (contrast with the open crowd field).",
+	"maps": [
+		{
+			"id": "cova",
+			"title": "Cova da Iria (overcast)",
+			"adjacent": [
+				"cova_storm",
+				"ridge"
+			],
+			"scene": {
+				"image": "res://assets/maps/fatima_cova.png",
+				"hex_grid": true,
+				"time_of_day": "noon",
+				"season": "autumn",
+				"effects": [
+					"rain"
+				],
+				"music": {
+					"suite": "test_mission",
+					"tier": "exploration"
+				},
+				"ambience": "amb_crowd_rain.wav"
+			}
+		},
+		{
+			"id": "cova_storm",
+			"title": "Cova da Iria (the Miracle)",
+			"adjacent": [
+				"cova"
+			],
+			"scene": {
+				"image": "res://assets/maps/fatima_cova_storm.png",
+				"hex_grid": true,
+				"time_of_day": "noon",
+				"season": "autumn",
+				"effects": [],
+				"music": {
+					"suite": "test_mission",
+					"tier": "boss"
+				},
+				"ambience": "amb_crowd_rain.wav"
+			}
+		},
+		{
+			"id": "ridge",
+			"title": "The Ridge Farmhouse",
+			"adjacent": [
+				"cova"
+			],
+			"scene": {
+				"image": "res://assets/maps/fatima_ridge.png",
+				"hex_grid": true,
+				"time_of_day": "dusk",
+				"season": "autumn",
+				"effects": [
+					"rain"
+				],
+				"music": {
+					"suite": "test_mission",
+					"tier": "combat"
+				},
+				"ambience": "amb_desert_wind.wav"
+			}
+		}
+	]
+}

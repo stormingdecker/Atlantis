@@ -1,0 +1,15 @@
+{
+  "_comment": "Physical ambient LEDs (WLED) driven by the scene lighting model. Disabled by default — set enabled=true and point host at your WLED controller (IP preferred, or an mDNS name like wled.local). led_count + layout describe the square of strips above the play area, walked clockwise from top-left; realtime streams one colour per LED over UDP (ddp | dnrgb) for smooth/directional effects, otherwise Tier-1 HTTP pushes a single solid colour. See scripts/wled_controller.gd and DESIGN.md §8 (v0.16).",
+  "enabled": false,
+  "host": "",
+  "http_port": 80,
+  "led_count": 0,
+  "layout": { "top": 0, "right": 0, "bottom": 0, "left": 0 },
+  "realtime": {
+    "enabled": false,
+    "protocol": "ddp",
+    "port": 4048,
+    "fps": 30,
+    "timeout_s": 2
+  }
+}

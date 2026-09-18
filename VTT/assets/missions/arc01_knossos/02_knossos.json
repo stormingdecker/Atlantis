@@ -1,0 +1,7 @@
+{
+	"map": "res://assets/maps/knossos.png",
+	"music": { "tier": "civilization" },
+	"mood": "forest_dusk",
+	"hex_grid": true,
+	"gm_notes": "Palace district, period cover identities. The local ATA embed is dead — recently cold. Period-inappropriate weapon scoring on the labyrinth walls."
+}

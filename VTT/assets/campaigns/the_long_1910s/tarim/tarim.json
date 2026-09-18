@@ -1,0 +1,70 @@
+{
+	"id": "tarim",
+	"title": "The Taklamakan Dig",
+	"gm_notes": "Two play surfaces (per the wiki Tarim-Foothold draft): the desert oasis approach with the 1920s expedition camp (exploration + tension), and the excavation cutting in lit + dust-storm/lamps-out layers (puzzle + combat). Desert uses dust particles; the dark layer is a relit twin of the lit dig, so switching between them keeps the identical layout. Briefing maps: parchment desert overview + the Xiaohe Cutting. Music reuses the test_mission suite for now \u2014 a Tarim-specific suite is a follow-up.",
+	"maps": [
+		{
+			"id": "desert",
+			"title": "Desert Approach & Oasis Camp",
+			"adjacent": [
+				"excavation"
+			],
+			"scene": {
+				"image": "res://assets/maps/tarim_desert.png",
+				"hex_grid": true,
+				"time_of_day": "noon",
+				"season": "summer",
+				"effects": [
+					"dust"
+				],
+				"music": {
+					"suite": "test_mission",
+					"tier": "exploration"
+				},
+				"ambience": "amb_desert_wind.wav"
+			}
+		},
+		{
+			"id": "excavation",
+			"title": "The Xiaohe Cutting (dig)",
+			"adjacent": [
+				"desert",
+				"excavation_dark"
+			],
+			"scene": {
+				"image": "res://assets/maps/tarim_excavation.png",
+				"hex_grid": true,
+				"time_of_day": "dusk",
+				"season": "summer",
+				"effects": [],
+				"music": {
+					"suite": "test_mission",
+					"tier": "combat"
+				},
+				"ambience": "amb_cave.wav"
+			}
+		},
+		{
+			"id": "excavation_dark",
+			"title": "The Xiaohe Cutting (dust-storm / lamps-out)",
+			"adjacent": [
+				"excavation"
+			],
+			"scene": {
+				"image": "res://assets/maps/tarim_excavation_dark.png",
+				"briefing": "tarim_excavation_briefing.png",
+				"hex_grid": true,
+				"time_of_day": "midnight",
+				"season": "summer",
+				"effects": [
+					"dust"
+				],
+				"music": {
+					"suite": "test_mission",
+					"tier": "boss"
+				},
+				"ambience": "amb_cave.wav"
+			}
+		}
+	]
+}
